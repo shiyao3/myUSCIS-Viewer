@@ -1,0 +1,87 @@
+/* ── Light (default) ── */
+.uc-card  { background: linear-gradient(135deg,#e3f2fd,#f0f4ff); padding:20px; border-radius:10px; }
+.uc-card h3 { color:#1a237e; margin:0 0 14px 0; }
+.uc-tbl   { width:100%; border-collapse:collapse; font-size:0.93em; }
+.uc-tbl tr { border-bottom:1px solid #e0e0e0; }
+.uc-lbl   { padding:6px 12px; color:#555; white-space:nowrap; }
+.uc-val   { padding:6px 12px; color:#212121; }
+.uc-muted { color:#777; }
+.uc-ok    { color:#2e7d32; }
+.uc-warn  { color:#c62828; }
+.uc-tline { position:relative; padding-left:28px; border-left:2px solid #e0e0e0; margin-left:10px; }
+.uc-tbody { padding:10px 14px; background:#f8f9fa; border-radius:8px; border:1px solid #e0e0e0; color:#212121; }
+.uc-tdate { color:#777; font-size:0.82em; }
+.uc-tdetail { font-size:0.85em; color:#555; margin-top:3px; }
+.uc-cgreen  { color:#2e7d32; }
+.uc-cpurple { color:#7b1fa2; }
+.uc-cblue   { color:#1565c0; }
+.uc-add { background:#e8f5e9; padding:6px 10px; margin:4px 0; border-left:4px solid #4caf50; border-radius:4px; font-family:monospace; font-size:0.85em; }
+.uc-add .dl { color:#2e7d32; font-weight:bold; }
+.uc-rem { background:#ffebee; padding:6px 10px; margin:4px 0; border-left:4px solid #f44336; border-radius:4px; font-family:monospace; font-size:0.85em; }
+.uc-rem .dl { color:#c62828; font-weight:bold; }
+.uc-chg { background:#fff8e1; padding:6px 10px; margin:4px 0; border-left:4px solid #ff9800; border-radius:4px; font-family:monospace; font-size:0.85em; }
+.uc-chg .dl { color:#e65100; font-weight:bold; }
+.uc-add code,.uc-rem code,.uc-chg code { background:rgba(0,0,0,.08); padding:1px 4px; border-radius:3px; font-size:.88em; color:inherit; }
+.uc-hhdr { background:#f0f4ff; }
+.uc-hhdr th { padding:5px 10px; text-align:left; color:#212121; }
+.uc-hrow { border-bottom:1px solid #e0e0e0; color:#212121; }
+.uc-hrow td { padding:5px 10px; font-size:0.85em; }
+.uc-hidx { color:#777; }
+
+/* ── Gradio dark mode (.dark on <html>) ── */
+html.dark .uc-card  { background:linear-gradient(135deg,#0d1b2e,#131330); }
+html.dark .uc-card h3 { color:#90b8f8; }
+html.dark .uc-tbl tr { border-bottom-color:#2e2e45; }
+html.dark .uc-lbl   { color:#9090a8; }
+html.dark .uc-val   { color:#d8d8e8; }
+html.dark .uc-muted { color:#606078; }
+html.dark .uc-ok    { color:#81c784; }
+html.dark .uc-warn  { color:#ef9a9a; }
+html.dark .uc-tline { border-left-color:#2e2e45; }
+html.dark .uc-tbody { background:#1e1e30; border-color:#2e2e45; color:#d8d8e8; }
+html.dark .uc-tdate { color:#606078; }
+html.dark .uc-tdetail { color:#9090a8; }
+html.dark .uc-cgreen  { color:#81c784; }
+html.dark .uc-cpurple { color:#ce93d8; }
+html.dark .uc-cblue   { color:#90caf9; }
+html.dark .uc-add { background:#1a3020; }
+html.dark .uc-add .dl { color:#81c784; }
+html.dark .uc-rem { background:#2d1a1a; }
+html.dark .uc-rem .dl { color:#ef9a9a; }
+html.dark .uc-chg { background:#2d2210; }
+html.dark .uc-chg .dl { color:#ffb74d; }
+html.dark .uc-add code,html.dark .uc-rem code,html.dark .uc-chg code { background:rgba(255,255,255,.12); }
+html.dark .uc-hhdr { background:#0f1628; }
+html.dark .uc-hhdr th { color:#d8d8e8; }
+html.dark .uc-hrow { border-bottom-color:#2e2e45; color:#d8d8e8; }
+html.dark .uc-hidx { color:#606078; }
+
+/* ── System dark-mode fallback (OS preference, no Gradio class set) ── */
+@media (prefers-color-scheme:dark) {
+    .uc-card  { background:linear-gradient(135deg,#0d1b2e,#131330); }
+    .uc-card h3 { color:#90b8f8; }
+    .uc-tbl tr { border-bottom-color:#2e2e45; }
+    .uc-lbl   { color:#9090a8; }
+    .uc-val   { color:#d8d8e8; }
+    .uc-muted { color:#606078; }
+    .uc-ok    { color:#81c784; }
+    .uc-warn  { color:#ef9a9a; }
+    .uc-tline { border-left-color:#2e2e45; }
+    .uc-tbody { background:#1e1e30; border-color:#2e2e45; color:#d8d8e8; }
+    .uc-tdate { color:#606078; }
+    .uc-tdetail { color:#9090a8; }
+    .uc-cgreen  { color:#81c784; }
+    .uc-cpurple { color:#ce93d8; }
+    .uc-cblue   { color:#90caf9; }
+    .uc-add { background:#1a3020; }
+    .uc-add .dl { color:#81c784; }
+    .uc-rem { background:#2d1a1a; }
+    .uc-rem .dl { color:#ef9a9a; }
+    .uc-chg { background:#2d2210; }
+    .uc-chg .dl { color:#ffb74d; }
+    .uc-add code,.uc-rem code,.uc-chg code { background:rgba(255,255,255,.12); }
+    .uc-hhdr { background:#0f1628; }
+    .uc-hhdr th { color:#d8d8e8; }
+    .uc-hrow { border-bottom-color:#2e2e45; color:#d8d8e8; }
+    .uc-hidx { color:#606078; }
+}
