@@ -57,7 +57,6 @@ Repeat steps 3–6 whenever you want to check for updates. The Changes tab will 
 .
 ├── app.py              # Application logic and Gradio UI
 ├── styles.css          # All custom CSS (light + dark mode)
-├── requirements.txt    # Python dependencies
 └── case_history/
     └── <CASE_ID>.json  # One file per case; each fetch appended as a list entry
 ```
