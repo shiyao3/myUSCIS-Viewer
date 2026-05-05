@@ -2,8 +2,11 @@
 
 A local Gradio dashboard for tracking USCIS case status. It stores a history of every snapshot you fetch and highlights exactly what changed between checks.
 
-## Features
+## Why run locally? Why not host an online app?
 
+Privacy. A lot of case trackers online track user data, even those claiming not to. The best solution is to own and take control of your data.
+
+## Features
 
 - **Case status overview** — Form type, applicant, representative, submission date, last updated, action required flag, and processing completion status.
 - **Change detection** — Compares each new snapshot against the previous one and shows added, removed, and changed fields with color coding.
